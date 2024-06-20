@@ -105,7 +105,11 @@ body {
     text-decoration: underline 1px solid blue !important;
     font-size: 25px;
 }
-
+#link_diskord {
+    color: blue;
+    text-decoration: underline 2px solid blue !important;
+    font-size: 33px;
+}
 * {
     margin: 0;
     padding: 0;
