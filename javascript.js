@@ -1,6 +1,6 @@
 let docTitle = document.title;
 function init () {
-  value = 131.5;
+  slider.value = 131.5;
 }
 window.addEventListener("blur", () =>{
     document.title = "Come back ☹";
