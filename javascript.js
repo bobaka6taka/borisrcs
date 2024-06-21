@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   initializeSlider();
 });
 slider.addEventListener('input', () => {
-  let hue = slider.value
-  setCookie('sliderColor', hue, 6969);
-  root.style.setProperty('--primary-color', `oklch(45.12% 0.267 ${hue})`)
-  root.style.setProperty('--secondary-color', `oklch(94.45% 0.03 ${hue})`)
-})
+  let hue = slider.value;
+  setCookie('sliderColor', hue, 365); // save for one year
+  root.style.setProperty('--primary-color', `oklch(45.12% 0.267 ${hue})`);
+  root.style.setProperty('--secondary-color', `oklch(94.45% 0.03 ${hue})`);
+});
