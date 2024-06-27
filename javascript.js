@@ -11,7 +11,7 @@ const slider = document.querySelector('.theme input');
 const root = document.querySelector(':root');
 
 function initializeSlider() {
-  const savedColor = localStorage.getItem('sliderColor');;
+  const savedColor = localStorage.getItem('sliderColor');
   if (savedColor) {
     document.getElementById('colorSlider').value = savedColor;
     let hue = savedColor;
