@@ -1,64 +1,116 @@
 <!DOCTYPE html>
 <html lang="bg">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Boris' RCs Съвети</title>
-    <link rel="website icon" type="png" href="./logo.png">
-</head>
+    <link rel="website icon" type="png" href="./logo.png" />
+  </head>
 
-<body>
+  <script>
+    new Splide("#image-slider").mount();
+  </script>
+
+  <body>
     <header>
-        <a href="index.html"> Начало <span></span></a>
-        <a href="za_nas.html"> За нас <span></span></a>
-        <a href="nachinaeshti.html"> За начинаещи <span></span></a>
-        <div class="dropdown">
-            <button class="dropbtn">Съвети &#x25BC;</button>
-            <div class="dropdown-content">
-                <a href="syweti_bateriq.html">Съвети за батерията</a>
-                <a href="suveti.html">Съвети за сглобяване и възраст</a>
-                <a href="poddryvka.html">Поддръжка и регулиране</a>
-            </div>
+      <a href="index.html"> Начало <span></span></a>
+      <a href="za_nas.html"> За нас <span></span></a>
+      <a href="nachinaeshti.html"> За начинаещи <span></span></a>
+      <div class="dropdown">
+        <button class="dropbtn">Съвети &#x25BC;</button>
+        <div class="dropdown-content">
+          <a href="syweti_bateriq.html">Съвети за батерията</a>
+          <a href="suveti.html">Съвети за сглобяване и възраст</a>
+          <a href="poddryvka.html">Поддръжка и регулиране</a>
         </div>
-        <a href="magazini.html"> Магазини <span></span></a>
-        <a href="videa.html"> Наши видеа <span></span></a>
-        <div class="theme">
-            <input type="range" value="131.5" min="0" max="360" step="0.08" id="colorSlider" />
-        </div>
+      </div>
+      <a href="magazini.html"> Магазини <span></span></a>
+      <a href="videa.html"> Наши видеа <span></span></a>
+      <div class="theme">
+        <input
+          type="range"
+          value="131.5"
+          min="0"
+          max="360"
+          step="0.08"
+          id="colorSlider"
+        />
+      </div>
     </header>
-    <br><br>
+    <br /><br />
     <main>
-        <h id="tema">RC съвети за батерията:</h> <br />
-        <p class="box" id="text">
-            Заредете батерията: <br />
-            Преди да излезете с вашия RC автомобил за първи път и след употреба е важно пълното зареждане на батерията.
-            <br />
-        </p>
-        <p class="box" id="text">
-            Изключете батерията: <br />
-            Искате ли да съхранявате вашия RC автомобил зареден за няколко седмици или месеци?
-            Преди това трябва да изключете батерията от колата. <br />
-        </p>
-        <p class="box" id="text">
-            Няколко батерии: <br />
-            Не винаги искате да чакате за презареждане на батерията?
-            Купете една или две резервни батерии, за да удължите времето за шофиране. <br />
-        </p>
-        <p class="box" id="text">
-            Грижете се и поддържайте редовно вашия RC автомобил: <br />
-            Използвайте подходящи смазочни материали и защита от корозия за частите, които често влизат в контакт с
-            мръсотия и влага.
-            Например пиньони, зъбни колела, амортисьори и други части.
-            Проверявайте редовно дали всичко е стегнато и затегнете разхлабените винтове, ако е необходимо.
-            Малките, леки LiPo батерии осигуряват най-добра производителност. Те трябва да се съхраняват и зареждат
-            внимателно.
-            Много по-здрави и по-малко чувствителни са малко по-малко мощните NiMH (никел-метал-хидридни) батерии.
-            Важно е вашето зарядно да отговаря на типа батерия!
-        </p><br />
-    </main>
-    <script src="javascript.js"></script>
-</body>
+      <h id="tema">RC съвети за батерията:</h> <br />
+      <br />
+      <center>
+        <div>
+          <!-- Container for the HTML slideshow -->
+          <div class="imageshow-1container">
+            <!-- Individual image slides -->
+            <div class="imageClass fade">
+              <img src="bateria.webp" style="width: 50%" />
+              <!-- Caption for the first image -->
+              <p style="text-align: center" id="text" class="box">
+                Заредете батерията преди да излезете с вашия RC автомобил за
+                първи път и след употреба е важно пълното зареждане, защото ако
+                се разреди твърде много може, да не може, да се зареди.
+              </p>
+            </div>
 
+            <div class="imageClass fade">
+              <img src="nqkolko.webp" style="width: 45%" />
+              <!-- Caption for the second image -->
+              <p id="text" class="box">
+                Изключете батерията:
+                <br />
+                Искате ли да съхранявате вашия RC автомобил зареден за няколко
+                седмици или месеци? Преди това просто трябва да изключете
+                батерията от колата.
+                <br /><br />
+                Няколко батерии:
+                <br />
+                Не винаги искате да чакате за презареждане на батерията? Купете
+                една или две резервни батерии, за да удължите времето за
+                шофиране.
+              </p>
+            </div>
+
+            <div class="imageClass fade">
+              <img src="batteryguidelabels.png" style="width: 50%" />
+              <!-- Caption for the third image -->
+              <p id="text" class="box">
+                Грижете се и поддържайте редовно вашия RC автомобил: <br />
+                Използвайте подходящи смазочни материали и защита от корозия за
+                частите, които често влизат в контакт с мръсотия и влага.
+                Например пиньони, зъбни колела, амортисьори и други части.
+                Проверявайте редовно дали всичко е стегнато и затегнете
+                разхлабените винтове, ако е необходимо.
+                <br />
+                <br />
+                Малките, леки LiPo батерии осигуряват най-добра
+                производителност. Те трябва да се съхраняват и зареждат
+                внимателно. Много по-здрави и по-малко чувствителни са малко
+                по-малко мощните NiMH (никел-метал-хидридни) батерии. Важно е
+                вашето зарядно да отговаря на типа батерия!
+              </p>
+            </div>
+          </div>
+          <br />
+
+          <!-- The dots/circles for navigation -->
+          <div>
+            <span class="dot" onclick="currentImage(1)"></span>
+            <span class="dot" onclick="currentImage(2)"></span>
+            <span class="dot" onclick="currentImage(3)"></span>
+          </div>
+        </div>
+      </center>
+      <br />
+    </main>
+
+    <script>
+      new Splide("#image-slider").mount();
+    </script>
+    <script src="javascript.js"></script>
+  </body>
 </html>
