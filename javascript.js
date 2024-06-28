@@ -24,7 +24,7 @@ function initializeSlider() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
   initializeSlider();
   currentImage(1); // Ensure the first image is displayed when the page loads
 });
