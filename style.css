@@ -158,7 +158,10 @@ body {
 
     background-color: var(--background-color);
     color: var(--primary-color);
-
+    display: block;
+    justify-self: auto;
+    align-items: auto;
+    min-height: 100vh;
 
 }
 
@@ -195,14 +198,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-}
-
-body {
-    display: block;
-    justify-self: auto;
-    align-items: auto;
-    min-height: 100vh;
-
 }
 
 header a {
