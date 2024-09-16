@@ -182,8 +182,8 @@ body {
 }
 
 #link {
-  color: blue;
-  text-decoration: underline 1px solid blue !important;
+  /* color: blue; */
+  /* text-decoration: underline 1px solid blue !important; */
   font-size: 25px;
 }
 
